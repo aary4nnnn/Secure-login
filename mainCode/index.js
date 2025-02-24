@@ -34,10 +34,12 @@ const Login = () => {
             <input type="password" placeholder="Password" id="password" name="password" />
           </p>
           <br />
-          <button type="submit" className="auth-button">Login</button> 
+                  
+        <Link style={{color:"black"}}to="/Home" className="auth-button2">Login</Link>
+      
         </form>
 
-        {/* ✅ Link to Register Page */}
+        
         <p className="back-to-auth">
           Don't have an account? <Link to="/register" className="back-link">Sign Up</Link>
         </p>

@@ -156,3 +156,14 @@ a.auth-button:hover {
     background-color: rgb(37, 147, 135);
     border-bottom: 3px solid rgb(29, 114, 104);
 }
+.auth-button2{
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: 0.3s;
+}

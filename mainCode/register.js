@@ -13,7 +13,7 @@ const Header = () => {
       </div>
       <div>
         {/* ✅ Sign Up Button that Redirects to Register Page */}
-        <Link to="/register" className="auth-button">Sign Up</Link>
+        <Link to="/" className="auth-button">Login</Link>
       </div>
     </header>
   );

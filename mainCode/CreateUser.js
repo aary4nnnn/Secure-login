@@ -1,4 +1,3 @@
-// CreateUser.js
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CreateUser.css';
@@ -34,56 +33,56 @@ export default function CreateUser() {
   }
 
   return (
-    <div className="page-container">
-      <div className="auth-container">
-        <h2 className="auth-heading">Create User</h2>
-        <form onSubmit={handleSubmit} className="auth-form">
-          <div className="form-group">
-            <label className="form-label">Name:</label>
+    <div className="page-container2">
+      <div className="auth-container2">
+        <h2 className="auth-heading2">Create User</h2>
+        <form onSubmit={handleSubmit} className="auth-form2">
+          <div className="form-group2">
+            <label className="form-label2">Name:</label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="form-input"
+              className="form-input2"
               disabled={loading}
             />
           </div>
 
-          <div className="form-group">
-            <label className="form-label">Email:</label>
+          <div className="form-group2">
+            <label className="form-label2">Email:</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="form-input"
+              className="form-input2"
               disabled={loading}
             />
           </div>
 
-          <div className="form-group">
-            <label className="form-label">Phone Number:</label>
+          <div className="form-group2">
+            <label className="form-label2">Phone Number:</label>
             <input
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
-              className="form-input"
+              className="form-input2"
               disabled={loading}
             />
           </div>
 
-          {error && <div className="error-message">{error}</div>}
+          {error && <div className="error-message2">{error}</div>}
 
           <button 
             type="submit" 
-            className="auth-button"
+            className="auth-button2"
             disabled={loading}
           >
             {loading ? (
               <>
-                <span className="loading-spinner"></span>
+                <span className="loading-spinner2"></span>
                 Creating...
               </>
             ) : 'Create'}
