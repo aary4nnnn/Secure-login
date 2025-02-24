@@ -1,0 +1,175 @@
+/* Home.css - Medium Dark Theme */
+
+.container {
+  background-color: #181818; /* Dark container background */
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #252525; /* Dark gray card background */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  animation: fadeIn 0.3s ease-in;
+  color: #f1f1f1; /* Light text for contrast */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pageHeading {
+  font-size: 2.5rem;
+  color: #03DAC6; /* Accent color for headings */
+  margin-bottom: 2rem;
+  font-weight: 600;
+  border-bottom: 3px solid #03DAC6;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.searchContainer {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #03DAC6;
+  box-shadow: 0 0 0 3px rgba(3, 218, 198, 0.2);
+}
+
+/* Users Table */
+.usersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.usersTable thead {
+  background-color: #2a2a2a;
+}
+
+.usersTable th {
+  padding: 1rem;
+  text-align: left;
+  color: #b2b2b2;
+  font-weight: 600;
+  border-bottom: 2px solid #444;
+}
+
+.usersTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+  color: #f1f1f1;
+  transition: background-color 0.2s ease;
+}
+
+.usersTable tr:last-child td {
+  border-bottom: none;
+}
+
+.usersTable tr:hover td {
+  background-color: #333;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.actionButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.updateButton {
+  background-color: #03DAC6;
+  color: #181818;
+}
+
+.updateButton:hover {
+  background-color: #02b3a5;
+}
+
+.deleteButton {
+  background-color: #ff7675;
+  color: #181818;
+}
+
+.deleteButton:hover {
+  background-color: #e05c5b;
+}
+
+/* Create Button */
+.createButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.createButton {
+  background-color: #00b894;
+  color: #181818;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.createButton:hover {
+  background-color: #00a383;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  .mainContent {
+    padding: 1rem;
+  }
+  .usersTable {
+    display: block;
+    overflow-x: auto;
+  }
+  .actionButtons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

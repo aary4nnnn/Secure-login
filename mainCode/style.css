@@ -1,0 +1,158 @@
+/* ✅ Global Styles */
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ✅ Navbar Styling */
+.navbar {
+    height: 2.5%;
+    background-color: rgb(48, 192, 175);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .chettinad {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    width: 5rem;
+}
+
+.navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* ✅ Heading inside Navbar */
+.chettinad h1 {
+    background-color: rgb(48, 192, 175);
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+/* ✅ Styling for Both Login & Register Pages */
+.auth-container {
+    width: 380px;
+    margin: 60px auto;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.auth-heading {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+
+.auth-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ✅ Input Fields */
+.input-field, .password-field {
+    margin: 12px 0;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ✅ Buttons for Login & Register */
+.auth-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ "Back to Register/Login" Link */
+.back-to-auth {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.back-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* ✅ About Section */
+.about p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* ✅ Footer */
+.footer {
+    margin-top: 10%;
+    background-color: rgb(48, 192, 175);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* ✅ Selection Highlight */
+::selection {
+    color: white;
+    background-color: rgb(48, 192, 175);
+}
+
+/* ✅ Sign Up Button in Navbar */
+a.auth-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(48, 192, 175);
+    transition: all 400ms ease-in-out;
+    white-space: nowrap;
+}
+
+a.auth-button:hover {
+    background-color: rgb(37, 147, 135);
+    border-bottom: 3px solid rgb(29, 114, 104);
+}
